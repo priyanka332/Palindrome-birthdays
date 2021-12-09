@@ -8,12 +8,10 @@ function reverseStr(str) {
     // return str.split("").reverse().join("");
 }
 
-
 function isPalindrome(str) {
     var reverse = reverseStr(str);
     return str === reverse;
 }
-
 
 function convertDateToStr(date) {
     var dateStr = { day: "", month: "", year: ""};
@@ -37,7 +35,6 @@ function convertDateToStr(date) {
     return dateStr;
 }
 
-
 function getAllDateFormates(date) {
     var dateStr = convertDateToStr(date)
 
@@ -50,8 +47,6 @@ function getAllDateFormates(date) {
 
     return [ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yymmdd];
 }
-
-
 
 function checkPalindromeForAllDateFormates(date) {
     var listOfPalindromes = getAllDateFormates(date);
@@ -67,7 +62,6 @@ function checkPalindromeForAllDateFormates(date) {
     return flag;
 }
 
-
 //  check for leap year
 function isLeapYear(year) {
     if (year % 400 === 0) {
@@ -81,7 +75,6 @@ function isLeapYear(year) {
     }
     return false;
 }
-
 
 // gets next date
 function getNextDate(date) {
@@ -128,8 +121,6 @@ function getNextDate(date) {
 
 }
 
-
-
 function getNextPalindromeDate(date) {
     var ctr = 0;
     var nextDate = getNextDate(date);
@@ -144,7 +135,6 @@ function getNextPalindromeDate(date) {
     }
     return [ctr, nextDate];
 }
-
 
 var dateInputRef = document.querySelector("#bday-input");
 var showBtnRef = document.querySelector("#show-btn");
@@ -173,6 +163,5 @@ function clickHandler() {
         }
     }
 }
-
 
 showBtnRef.addEventListener("click", clickHandler);
