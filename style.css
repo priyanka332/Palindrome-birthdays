@@ -1,4 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+:root {
+    --primary-color: #d60e0e;
+}
+
 body {
+    background-image: url("bday.jpg");
+    background-size: 100%;
     text-align: center;
     margin: 0px;
+}
+
+nav {
+    color: var(--primary-color);
+    font-family: 'Rock Salt', cursive;
+    margin-left: auto;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+nav:hover {
+    color: rgb(7, 83, 23);
+    font-family: 'Philosopher', sans-serif;
+}
+
+input {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 3rem;
+    margin: auto;
+    text-align: center;
+    background-color: #f1b8b8;
+    border-radius: 1rem;
+    border-color: #7a0505;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+button {
+    display: block;
+    margin-top: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    background: transparent;
+    color: var(--primary-green);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 3rem;
+    border-color: #5f2929;
+}
+
+button:hover {
+    background-color: #060707;
+    color: #f7efef;
+}
+
+#result {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: x-large;
+    border: 2px solid;
+    border-color: #aa2323;
+    border-radius: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-weight: bold;
+    color: #470505;
 }
